@@ -1,0 +1,29 @@
+/usr/src/app$ cd code-user/
+/usr/src/app/code-user$ git stash
+Saved working directory and index state WIP on main: 89d91f8 add index.html
+/usr/src/app/code-user$ echo "ляляля" > todo.md
+/usr/src/app/code-user$ /usr/src/app/code-user$ echo "stash не трогает новые файлы, которые еще не добавлены в индекс." >> hexlet.txt                                                                                                    echo "stash не трогает новые файлы, которые еще не добавлены в индекс." >> hexlet.txt которые еще не добавлены в индекс." >> hexlet.txt
+/usr/src/app/code-user$ git add hexlet.txt
+/usr/src/app/code-user$ git commit -m "stash string"
+[main 5f3e3aa] stash string
+ 1 file changed, 1 insertion(+)
+/usr/src/app/code-user$ git stash pop
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        quotes.txt
+        todo.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (ff81fed82d580bc5fd317f2602a79f41d0f98ab8)
+/usr/src/app/code-user$ git commit -m "добавил todo.md и восстановленные из стэша изменения"
+[main 3ab8adb] добавил todo.md и восстановленные из стэша измененияенные из стэша изменения"
+ 3 files changed, 7 insertions(+)
+ create mode 100644 quotes.txt
+ create mode 100644 todo.md
+/usr/src/app/code-user$ 
